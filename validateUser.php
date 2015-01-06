@@ -11,7 +11,7 @@
 =======
 <?php
 if(isset($_POST['username'])&&isset($_POST['password'])){
-	$url = "http://218.94.159.104:6003/weixinMoodle/";
+	$url = "http://218.94.159.104:6003/weixinMoodle/test.php";
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$data = array('username' => $username, 'password' => $password);
