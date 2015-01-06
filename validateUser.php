@@ -7,7 +7,9 @@ if(isset($_POST['username'])&&isset($_POST['password'])){
 	$result = postData($url,$data);
 	echo $result;
 }
-
+else{
+	echo "no username of password";
+}
 function postData($url,$data){
 	$ch = curl_init();
 	$timeout = 999999;
