@@ -1,5 +1,5 @@
 <html>
-	<form action="http://218.94.159.104:6004/moodleTest/validateUser.php" method="post">
+	<form action="http://218.94.159.104:6004/validateUser.php" method="post">
 		<lable for="username">Please input username: </lable>
 		<input id="username" type="text" name="username" /> <br />
 		<label for="password">Please input your password: </label> 
