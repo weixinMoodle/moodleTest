@@ -11,6 +11,11 @@
     curl_setopt($ch, CURLOPT_URL,$url);  
     curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);  
          
-    curl_exec($ch); //执行post请求，将结果输入
+    $result = curl_exec($ch); //执行post请求，将结果输入
+    if($result=="True"){
+    	echo "Success";
+    }else{
+    	echo "Fail";
+    }
       
 ?>  
