@@ -1,25 +1,24 @@
-<?php
-if(isset($_POST['username'])&&isset($_POST['password'])){
-	$url = "http://218.94.159.104:6003/weixinMoodle/test.php";
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$data = array('username' => $username, 'password' => $password);
-	$result = postData($url,$data);
-	echo $result;
-}
-else{
-	echo "no username of password";
-}
-function postData($url,$data){
-	$ch = curl_init();
-	$timeout = 999999;
-	curl_setopt($ch, CURLOPT_URL, $url);
-	curl_setopt($ch, CURLOPT_POST, true);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-	$result = curl_exec($ch);
-	curl_close($ch);
-	return $result;
-}
-?>
+<?php  
+    $post_data =   
+                array(  
+                        'username=huangtao',  
+                        'password=Paul_1993',  
+                );  
+      
+        $post_data = implode('&',$post_data);  
+      
+        $url='http://218/94/159/104:6004/weixinMoodle/test.php';  
+      
+        $ch = curl_init();  
+        curl_setopt($ch, CURLOPT_POST, 1);  
+        curl_setopt($ch, CURLOPT_URL,$url);  
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);  
+        ob_start();  
+        curl_exec($ch);  
+        $result = ob_get_contents() ;  
+        ob_end_clean();  
+      
+    echo $result;  
+      
+      
+    ?>  
