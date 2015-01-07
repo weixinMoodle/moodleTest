@@ -3,7 +3,7 @@
     $password = $_POST["password"];
     $post_data = "username=$username&password=$password";
       
-    $url='http://localhost:6003/weixinMoodle/authenticate_user.php';  
+    $url='http://localhost:6003/weixinMoodle/authenticateUser.php';  
       
     $ch = curl_init();  
     curl_setopt($ch, CURLOPT_POST, 1);  
