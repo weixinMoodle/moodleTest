@@ -6,6 +6,7 @@ getTeacherCourses("1");
 
 function getTeacherCourses($openid){
 	$url='http://localhost:6003/weixinMoodle/getTeacherCourses.php';
+	$post_data = "openid=$openid";
 	
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_POST, 1);
