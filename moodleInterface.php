@@ -20,7 +20,7 @@ function getTeacherCourses($openid){
 	$result = (Array)$result;
 	
 	foreach($result as $r=>$r_value){
-		echo $r_value.fullname;
+		echo $r_value->fullname;
 	}
 }
 
