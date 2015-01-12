@@ -2,6 +2,8 @@
 
 require_once('./moodleClass.php');
 
+getTeacherCourses("1");
+
 function getTeacherCourses($openid){
 	$url='http://localhost:6003/weixinMoodle/getTeacherCourses.php';
 	
