@@ -16,7 +16,8 @@ function getTeacherCourses($openid){
 	$result = curl_exec($ch);
 	curl_close ( $ch );
 	
-	$result = (Array)json_decode($result);
+	$result = "[" . json_decode($result) . "]";
+	$result = (Array)$result;
 	
 	foreach($result as $r=>$r_value){
 		echo $r_value.fullname;
