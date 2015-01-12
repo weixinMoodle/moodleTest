@@ -18,11 +18,13 @@ function getTeacherCourses($openid){
 	curl_close ( $ch );
 	
 	$result = "[" . json_decode($result) . "]";
-	$result = (Array)$result;
+// 	$result = (Array)$result;
 	
-	foreach($result as $r=>$r_value){
-		echo $r_value->fullname;
-	}
+// 	foreach($result as $r=>$r_value){
+// 		echo $r_value->fullname;
+// 	}
+
+	echo $result;
 }
 
 ?>
