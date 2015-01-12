@@ -2,7 +2,6 @@
 
 require_once('./moodleClass.php');
 
-getTeacherCourses("1");
 
 function getTeacherCourses($openid){
 	$url='http://localhost:6003/weixinMoodle/getTeacherCourses.php';
@@ -17,14 +16,14 @@ function getTeacherCourses($openid){
 	$result = curl_exec($ch);
 	curl_close ( $ch );
 	
-	$result = "[" . json_decode($result) . "]";
+//	$result = "[" . $result . "]";
+	$result = json_decode($result);
 // 	$result = (Array)$result;
 	
 // 	foreach($result as $r=>$r_value){
 // 		echo $r_value->fullname;
-// 	}
-
-	echo $result;
+//	}
+	echo $result[0]->fullname;	
 }
-
+getTeacherCourses("1");
 ?>
