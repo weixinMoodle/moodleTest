@@ -60,7 +60,7 @@ function getCourseNameById($courseId){
 	curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, 1 );
 	curl_setopt ( $ch, CURLOPT_POSTFIELDS, $post_data );
 
-	$response = curl_exec ( $ch );
+	$result = curl_exec ( $ch );
 	curl_close($ch);
 
 	return $result;
