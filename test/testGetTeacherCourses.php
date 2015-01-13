@@ -6,5 +6,5 @@ $result = getTeacherCourses('4');
 echo "hello";
 echo json_encode($result);
 echo "\n";
-echo $result[0]->CourseID;
+echo $result[0]['CourseName'];
 ?>
