@@ -13,7 +13,4 @@ function getMoodleUserid($openid){
     return $moodle_uid;
 }
 
-$r = getMoodleUserid("test");
-echo $r;
-
 ?>
