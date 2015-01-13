@@ -1,7 +1,7 @@
 <?php
    
 function getMoodleUserid($openid){
-    require_once('../myconfig.php');
+    require_once(dirname(__FILE__) .'/../myconfig.php');
     ini_set('display_errors', "on");//设置开启错误提示
     error_reporting(E_ALL);//错误等级提示
   

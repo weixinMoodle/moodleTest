@@ -1,8 +1,12 @@
 <?php
 require_once (dirname(__FILE__) . '/moodleClass.php');
+require_once (dirname(__FILE__) . '/getMoodleUserid.php');
+
 function getTeacherCourses($openid) {
 	$url = 'http://localhost:6003/weixinMoodle/getTeacherCourses.php';
-	$post_data = "openid=$openid";
+	$userid = getMoodleUserid($openid);
+	
+	$post_data = "userid=$userid";
 	
 	$ch = curl_init ();
 	curl_setopt ( $ch, CURLOPT_POST, 1 );
