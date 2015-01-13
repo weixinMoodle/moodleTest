@@ -46,6 +46,7 @@ function getCourseIdByKeyword($keyword){
 	
 	for($x = 0; $x<count($responseList); $x ++){
 		$courseId = $responseList[$x]->id;
+		echo $courseId;
 		array_push($result,$courseId);
 	}
 	
