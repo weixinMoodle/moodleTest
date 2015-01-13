@@ -19,8 +19,6 @@ function getTeacherCourses($openid) {
 	for($x = 0; $x < count($responseList); $x ++) {
 		$courseId = $responseList[$x]->id;
 		$courseName = $responseList[$x]->fullname;
-		echo $courseId;
-		echo $courseName;
 		$courseArray = array("CourseID"=>"$courseId","CourseName"=>"$courseName");
 		array_push($result,$courseArray);
 	}
