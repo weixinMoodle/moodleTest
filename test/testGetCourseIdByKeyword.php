@@ -1,5 +1,5 @@
 <?php
-// require_once('../moodleInterface.php');
+include('../moodleInterface.php');
 echo "hello";
 // $result = getCourseIdByKeyword('weixin');
 
