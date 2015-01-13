@@ -1,7 +1,7 @@
 <?php
 require_once('../moodleInterface.php');
+echo "hello";
+// $result = getCourseIdByKeyword('weixin');
 
-$result = getCourseIdByKeyword('weixin');
-
-echo $result[0];
+// echo $result[0];
 ?>
