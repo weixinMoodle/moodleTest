@@ -1,6 +1,6 @@
 <?php
 
-include('moodleTest/moodleInterface.php');
+include (dirname(__FILE__) . '/../moodleInterface.php');
 
 $result = getCourseIdByKeyword('weixin');
 
