@@ -1,6 +1,6 @@
 <?php
-include('moodleTest/test/printHello/php');
+include('moodleTest/test/printHello.php');
 
-echo "include success";
+printHello();
 
 ?>
