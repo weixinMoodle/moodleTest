@@ -2,6 +2,6 @@
 
 include (dirname(__FILE__) . '/../moodleInterface.php');
 
-$result = getTeacherCourses('4');
+$result = getTeacherCourses('test');
 echo $result[0]['CourseName'];
 ?>
