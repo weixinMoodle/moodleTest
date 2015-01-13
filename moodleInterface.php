@@ -54,5 +54,5 @@ function getCourseIdByKeyword($keyword){
 }
 
 $result = getCourseIdByKeyword("weixin");
-echo $result;
+echo $result[0];
 ?>
