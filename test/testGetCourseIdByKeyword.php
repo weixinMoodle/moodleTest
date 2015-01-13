@@ -1,9 +1,8 @@
 <?php
 
-include('../moodleInterface.php');
-include('./printHello.php');
-echo "hello";
-// $result = getCourseIdByKeyword('weixin');
+include('moodleTest/moodleInterface.php');
 
-// echo $result[0];
+$result = getCourseIdByKeyword('weixin');
+
+echo $result[0];
 ?>
