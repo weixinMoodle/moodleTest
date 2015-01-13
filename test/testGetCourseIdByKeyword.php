@@ -3,5 +3,5 @@ require_once('../moodleInterface.php');
 
 $result = getCourseIdByKeyword('weixin');
 
-echo count($result[0]);
+echo count($result);
 ?>
