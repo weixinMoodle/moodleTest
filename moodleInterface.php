@@ -27,5 +27,30 @@ function getTeacherCourses($openid) {
 	
 	return $result;
 }
-getTeacherCourses ( "1" );
+
+function getCourseIdByKeyword($keyword){
+	$url = 'http://localhost:6003/weixinMoodle/getCourseIdByKeyword.php';
+	$post_data = "keyword=$keyword";
+	
+	$ch = curl_init ();
+	curl_setopt ( $ch, CURLOPT_POST, 1 );
+	curl_setopt ( $ch, CURLOPT_URL, $url );
+	curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, 1 );
+	curl_setopt ( $ch, CURLOPT_POSTFIELDS, $post_data );
+	
+	$response = curl_exec ( $ch );
+	curl_close($ch);
+	
+	$responseList = json_decode($response);
+	$result = array();
+	
+	for($x = 0; $x<count($responseList); $x ++){
+		$courseId = $responseList[$x]->id;
+		array_push($result,$courseId);
+	}
+	
+	return $result;
+}
+
+// getCourseIdByKeyword("weixin");
 ?>
