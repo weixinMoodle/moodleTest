@@ -46,13 +46,10 @@ function getCourseIdByKeyword($keyword){
 	
 	for($x = 0; $x<count($responseList); $x ++){
 		$courseId = $responseList[$x]->id;
-// 		echo $courseId;
 		array_push($result,$courseId);
 	}
 	
 	return $result;
 }
 
-$result = getCourseIdByKeyword("weixin");
-echo $result[0];
 ?>
