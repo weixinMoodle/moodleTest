@@ -53,6 +53,6 @@ function getCourseIdByKeyword($keyword){
 	return $result;
 }
 
-$result = getCourseIdByKeyword("weixin");
-echo $result[0];
+// $result = getCourseIdByKeyword("weixin");
+// echo $result[0];
 ?>
