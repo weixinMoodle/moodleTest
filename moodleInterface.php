@@ -1,5 +1,5 @@
 <?php
-require_once ('./moodleClass.php');
+require_once (dirname(__FILE__) . '/moodleClass.php');
 function getTeacherCourses($openid) {
 	$url = 'http://localhost:6003/weixinMoodle/getTeacherCourses.php';
 	$post_data = "openid=$openid";
