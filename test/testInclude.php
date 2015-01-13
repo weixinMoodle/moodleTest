@@ -1,5 +1,5 @@
 <?php
-include('moodleTest/test/printHello.php');
+include('/var/www/moodleTest/test/printHello.php');
 
 printHello();
 
