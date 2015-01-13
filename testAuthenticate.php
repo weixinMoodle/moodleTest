@@ -1,7 +1,7 @@
 <?php
    session_start();
     $username = "huangtao";
-    $password = "Paul_1993";
+    $password = "Paul_19";
 //     $weixin = $_POST["weixin_num"];
     
     $post_data = "username=$username&password=$password";
