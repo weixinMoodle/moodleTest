@@ -42,14 +42,14 @@ function getCourseIdByKeyword($keyword){
 	curl_close($ch);
 	
 	$responseList = json_decode($response);
-// 	$result = array();
+	$result = array();
 	
-// 	for($x = 0; $x<count($responseList); $x ++){
-// 		$courseId = $responseList[$x]->id;
-// 		array_push($result,$courseId);
-// 	}
+	for($x = 0; $x<count($responseList); $x ++){
+		$courseId = $responseList[$x]->id;
+		array_push($result,$courseId);
+	}
 	
-	return $response;
+	return $result;
 }
 
 $result = getCourseIdByKeyword("weixin");
