@@ -74,7 +74,6 @@ function getCourseNameById($courseId){
 	$resultArray = array();
 	
 	if($result){
-		echo "Not null";
 		array_push($resultArray, $result);
 	}
 	
