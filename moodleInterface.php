@@ -73,7 +73,10 @@ function getCourseNameById($courseId){
 	curl_close($ch);
 	$resultArray = array();
 	
-	array_push($resultArray, $result);
+	if($result){
+		echo "Not null";
+		array_push($resultArray, $result);
+	}
 	
 	return $resultArray;
 }
