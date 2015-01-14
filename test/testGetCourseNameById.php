@@ -5,7 +5,7 @@
 
 include (dirname(__FILE__) . '/../moodleInterface.php');
 
-$result = getCourseNameById('3');
+$result = getCourseNameById('100');
 
 echo $result;
 ?>
