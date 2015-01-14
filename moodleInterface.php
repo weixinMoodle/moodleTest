@@ -71,8 +71,12 @@ function getCourseNameById($courseId){
 
 	$result = curl_exec ( $ch );
 	curl_close($ch);
-
-	return $result;
+	$resultArray = array();
+	if($result){
+		array_push($resultArray,$result);
+	}
+	
+	return $resultArray;
 }
 
 ?>
