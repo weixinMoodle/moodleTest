@@ -70,7 +70,6 @@ function getCourseNameById($courseId){
 	curl_setopt ( $ch, CURLOPT_POSTFIELDS, $post_data );
 
 	$result = curl_exec ( $ch );
-	echo $result;
 	curl_close($ch);
 	$resultArray = array();
 	
