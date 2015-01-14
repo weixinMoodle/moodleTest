@@ -5,7 +5,7 @@
 
 include (dirname(__FILE__) . '/../moodleInterface.php');
 
-$result = getCourseNameById('100');
+$result = getCourseNameById('3');
 
 if(count($result) == 0){
 	echo "Course not found";
